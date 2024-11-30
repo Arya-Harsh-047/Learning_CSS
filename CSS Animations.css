@@ -1,0 +1,355 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     background: url("clouds_background.jpg") no-repeat fixed center;
+}
+:root{
+        --h2text-shadow:3px 4px 6px orangered, 0 0 25px orange, 2px 3px 5px orangered;
+
+        --h2color:azure;
+}
+h1{
+    color: transparent;
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 1px;
+    background-image: url("rainbow.jpg");
+    background-position: center;
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+h2{    
+    letter-spacing: 1px;
+    /* color: white; */
+    color: var(--h2color);
+    /* text-shadow: 3px 4px 6px blue, 0 0 25px lightblue; */
+    text-shadow: var(--h2text-shadow);
+    font-size: 30px;
+}
+h3{
+    letter-spacing: 1px;
+    /* color: white; */
+    color: #000;
+    text-shadow: 3px 4px 6px mediumvioletred, 0 0 25px violet;
+    font-size: 25px;
+}
+
+#main{
+    margin-left: 30px;
+}
+
+#main p,span,pre{
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#card1{
+    width: 250px;
+    height: 250px;
+    background: lightgreen;
+    text-align: center;
+    font-weight: bolder;
+    margin-left: 150px;
+    font-size: 25px;
+    /* line-height: 50px; */
+    box-sizing: border-box;
+    padding-top: 100px;
+    box-shadow: 0 0 15px -5px black;
+    animation-name: example1;
+    animation-duration: 2s;
+
+}
+
+@keyframes example1{
+    from{
+        border-radius: 0%;
+        background: lightgreen;
+        
+    }
+    to{
+        border-radius: 50%;
+        background:linear-gradient(to left , orangered, orange)
+    }
+}
+#card2{
+    width: 250px;
+    height: 250px;
+    background: lightskyblue;
+    text-align: center;
+    font-weight: bolder;
+    margin-left: 150px;
+    font-size: 25px;
+    /* line-height: 50px; */
+    box-sizing: border-box;
+    padding-top: 100px;
+    box-shadow: 0 0 15px -5px black;
+    animation-name: example2;
+    animation-duration: 2s;
+    animation-delay: 3s;
+
+}
+
+@keyframes example2{
+    0%{
+        border-radius: 0%;
+        background: lightgreen;
+        
+    }
+    50%{
+        border-radius: 50%;
+        background:linear-gradient(to left , plum, orchid)
+    }
+    100%{
+        border-radius: 0%;
+        background: lightgreen;
+    }
+}
+#card3{
+    width: 250px;
+    height: 250px;
+    background: lightsalmon;
+    text-align: center;
+    font-weight: bolder;
+    margin-left: 150px;
+    font-size: 25px;
+    /* line-height: 50px; */
+    box-sizing: border-box;
+    padding-top: 100px;
+    box-shadow: 0 0 15px -5px black;
+    animation-name: example3;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    /* animation-iteration-count: 3; */
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes example3{
+    0%{
+        border-radius: 0%;
+        background: lightsalmon;
+        
+    }
+    50%{
+        border-radius: 50%;
+        background:linear-gradient(to left , #2E3192, #1BFFFF)
+    }
+    100%{
+        border-radius: 0%;
+        background: lightsalmon;
+    }
+}
+#card4{
+    width: 250px;
+    height: 250px;
+    position: relative;
+    background: linear-gradient(to left , #662D8C , #ED1E79); 
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    margin-left: 150px;
+    font-size: 25px;
+    box-sizing: border-box;
+    padding: 90px 20px;
+    box-shadow: 0 0 15px -5px black;
+    animation-name: example4;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    /* animation-direction: reverse; */
+    animation-direction: alternate;
+      }
+      
+      @keyframes example4 {
+        0%   {background:linear-gradient(to left , #662D8C , #ED1E79);  
+            left:0px; 
+            top:0px;
+            border-radius: 0%;
+        }
+
+        25%  {background:linear-gradient(to left , plum, orchid); 
+            left:200px; 
+            top:0px;
+            border-radius: 50%;
+        }
+
+        50%  {background:linear-gradient(to left , orange, orangered); 
+            left:200px; 
+            top:200px;
+            border-radius: 50%;
+        }
+        75%  {background:linear-gradient(to left , #FF5F6D , #FFC371); 
+            left:0px; 
+            top:200px;
+            border-radius: 50%;
+        }
+        100% {background:linear-gradient(to left , #662D8C , #ED1E79); 
+            left:0px; 
+            top:0px;
+            border-radius: 0%;
+        }
+      }
+#card5{
+    width: 250px;
+    height: 250px;
+    position: relative;
+    background: linear-gradient(to left , #FF5F6D , #FFC371); 
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    margin-left: 150px;
+    font-size: 25px;
+    box-sizing: border-box;
+    padding: 90px 20px;
+    box-shadow: 0 0 15px -5px black;
+    animation-name: example5;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+    animation-timing-function: ease-in;
+    animation-timing-function: ease-out;
+    animation-timing-function: ease-in-out;
+    animation-timing-function: cubic-bezier(0.1,0.7,1.0,0.1);
+      }
+      
+      @keyframes example5 {
+        0%   {background:linear-gradient(to left , #FF5F6D , #FFC371); 
+            left:0px; 
+            top:0px;
+            border-radius: 0%;
+        }
+
+        25%  {background:linear-gradient(to left , plum, orchid); 
+            left:200px; 
+            top:0px;
+            border-radius: 50%;
+        }
+
+        50%  {background:linear-gradient(to left , orange, orangered); 
+            left:200px; 
+            top:200px;
+            border-radius: 50%;
+        }
+        75%  {background:linear-gradient(to left , #662D8C , #ED1E79);  
+            left:0px; 
+            top:200px;
+            border-radius: 50%;
+        }
+        100% {background: linear-gradient(to left , #FF5F6D , #FFC371);
+            left:0px; 
+            top:0px;
+            border-radius: 0%;
+        }
+      }
+#card6{
+    width: 250px;
+    height: 250px;
+    position: relative;
+    background: linear-gradient(to left , #FF5F6D , #FFC371); 
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    margin-left: 150px;
+    font-size: 25px;
+    box-sizing: border-box;
+    padding: 80px 20px;
+    box-shadow: 0 0 15px -5px black;
+    animation: example6 4s ease 2s infinite alternate;
+        /* animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-direction */
+      }
+      
+      @keyframes example6 {
+        0%   {background:linear-gradient(to left , #FF5F6D , #FFC371); 
+            left:0px; 
+            top:0px;
+            border-radius: 0%;
+        }
+
+        25%  {background:linear-gradient(to left , plum, orchid); 
+            left:200px; 
+            top:0px;
+            border-radius: 50%;
+        }
+
+        50%  {background:linear-gradient(to left , orange, orangered); 
+            left:200px; 
+            top:200px;
+            border-radius: 50%;
+        }
+        75%  {background:linear-gradient(to left , #662D8C , #ED1E79);  
+            left:0px; 
+            top:200px;
+            border-radius: 50%;
+        }
+        100% {background: linear-gradient(to left , #FF5F6D , #FFC371);
+            left:0px; 
+            top:0px;
+            border-radius: 0%;
+        }
+      }
+#card7{
+    width: 250px;
+    height: 250px;
+    position: relative;
+    background: linear-gradient(to left , #FF5F6D , #FFC371); 
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    margin-left: 150px;
+    font-size: 25px;
+    box-sizing: border-box;
+    padding: 80px 20px;
+    box-shadow: 0 0 15px -5px black;
+    animation: example7 4s 2s infinite alternate;
+    /* animation-play-state: paused; */
+      }
+ 
+#card7 > small{
+    font-size: medium;
+}      
+      
+#card7:hover{
+    animation-play-state: paused;
+}
+
+      @keyframes example7 {
+        0%   {background:linear-gradient(to left , #FF5F6D , #FFC371); 
+            left:0px; 
+            top:0px;
+            border-radius: 0%;
+        }
+
+        25%  {background:linear-gradient(to left , plum, orchid); 
+            left:200px; 
+            top:0px;
+            border-radius: 50%;
+        }
+
+        50%  {background:linear-gradient(to left , orange, orangered); 
+            left:200px; 
+            top:200px;
+            border-radius: 50%;
+        }
+        75%  {background:linear-gradient(to left , #662D8C , #ED1E79);  
+            left:0px; 
+            top:200px;
+            border-radius: 50%;
+        }
+        100% {background: linear-gradient(to left , #FF5F6D , #FFC371);
+            left:0px; 
+            top:0px;
+            border-radius: 0%;
+        }
+      }

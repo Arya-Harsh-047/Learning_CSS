@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layout - The position Property
+    </title>
+    <link rel="stylesheet" href="CSS Position.css">
+</head>
+<body>
+    <h1 class="head">CSS Layout Position</h1>
+    <p class="para">The position property specifies the type of positioning method used for an element (static, relative, fixed, absolute or sticky).    </p>
+<br>
+<br>
+
+ <h1>The position Property</h1>
+ <pre class="pre1">
+  The position property specifies the type of positioning method used for an element.
+
+  There are five different position values:
+
+  1. static
+  2. relative
+  3. fixed
+  4. absolute
+  5.sticky
+
+  Elements are then positioned using the top, bottom, left, and right properties.
+ </pre><br>
+
+ <h2>1. Position: static</h2>
+ <pre class="pre1">
+  HTML elements are positioned static by default.
+
+  Static positioned elements are not affected by the top, bottom, left, and right properties.  
+ </pre><br>
+
+ <div class="static"></div>
+ <br>
+ <p class="para">
+  An element with position: static; is not positioned in any special way; it is always positioned according to the normal flow of the page:
+ </p>
+ <br>
+ <br>
+
+ <h2>2. Position: relative</h2>
+ <pre class="pre1">
+    An element with position: relative; is <mark style="background-color: plum;"><b>positioned relative to its normal position.</b></mark>
+
+    Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. 
+    Other content will not be adjusted to fit into any gap left by the element.
+</pre>
+ 
+ <div class="relative"></div>
+<br>
+<br> 
+
+<h2>3. Position: absolute</h2>
+<pre class="pre1">
+  An element with position: absolute; is <b>
+ positioned relative to the nearest positioned ancestor</b> (instead of positioned relative to the viewport, like fixed).
+
+  However; <b>if an absolute positioned element has no positioned ancestors, <mark style="background-color: lightsalmon;">it uses the document body, and moves along with page scrolling.</mark></b>
+
+ <b>Note:</b> Absolute positioned elements are removed from the normal flow, and can overlap elements.
+</pre>
+
+<div id="box">
+    <!-- here box is relative so below div element is positioned to this box div element -->
+    <div class="absolute">
+
+<!-- Note: Since in this case (when their is a single div) the absolute has no positioned ancestors so it uses body element as its ancestors thats why when we are assigning the left & top value to it it goes to the top as it considers body its ancestor -->
+    </div>
+</div>
+<p class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus in eveniet quis fugit assumenda repudiandae, reiciendis consectetur voluptate labore illum a deleniti facere odio veritatis nesciunt. Eligendi cumque ad veniam.</p>
+<br>
+<br>
+<br>
+
+<h2>4. Position: Fixed</h2>
+<pre class="pre1">
+  An element with position: fixed; is positioned relative to the viewport, which means it <mark style="background-color:orange;"><b>always stays in the same place even if the page is scrolled.</mark></b> 
+  The top, right, bottom, and left properties are used to position the element.
+</pre>
+
+<div class="fixed">
+    <img src="call.png" alt="" width="100px" height="100px">
+</div>
+<br>
+<br>
+<br>
+
+<h2>5. Position: Sticky</h2>
+<pre class="pre1">
+  An element with position: sticky; is positioned based on the user's scroll position.
+
+  <mark style="background-color: tomato;"><b>A sticky element toggles between relative and fixed, depending on the scroll position.</b></mark> 
+  
+  It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).
+</pre><br><br>
+<div class="box">
+<div class="sticky">
+    Position Sticky
+</div>
+<br>
+Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime facilis ad atque non iusto quasi eaque perspiciatis? Dolor, est? Perferendis, odit in inventore consequatur eligendi, nesciunt quam consequuntur illo dolorum, laboriosam doloribus corrupti qui harum dicta optio libero expedita animi corporis tempora. Quidem sit eius et laudantium ad ducimus tenetur a dignissimos quo eveniet reiciendis doloribus, accusamus obcaecati provident maxime, vel perspiciatis quasi labore voluptatum doloremque cum expedita culpa quibusdam! Tempora, possimus. Omnis nemo velit, est veniam itaque ex quod corrupti, eaque provident aliquam quam voluptates placeat, impedit nihil et odio maiores tenetur voluptatem quo! Libero nam perspiciatis deleniti, deserunt suscipit quae sapiente odio totam facilis numquam ab! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos tenetur temporibus eveniet ducimus, enim adipisci ex magni nobis aliquam, laudantium magnam voluptatem molestiae numquam iste? Quisquam harum ipsa consequuntur commodi!
+</div>
+</body> 
+</html>

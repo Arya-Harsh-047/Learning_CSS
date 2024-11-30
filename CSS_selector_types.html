@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector Types</title>
+</head>
+<style>
+/*Desendent Selector*/
+div p{
+    color:black;
+    font-weight: bolder;
+    
+}
+</style>
+
+<body>
+    <h1>CSS Selectors</h1>
+    <pre>
+    We can divide CSS selectors into five categories:
+    <ul>
+        <li>Simple selectors (select elements based on name, id, class)</li>
+        <li>Combinator selectors (select elements based on a specific relationship between them)</li>
+        <li>Pseudo-class selectors (select elements based on a certain state)</li>
+        <li>Pseudo-elements selectors (select and style a part of an element)</li>
+        <li>Attribute selectors (select elements based on an attribute or attribute value)</li>
+    </ul></pre>
+
+    <h2>1. Simple selectors:</h2>
+    <p> Select elements based on name, id, class</p>
+    <br>
+
+    <h2>2. Combinator selectors</h2>
+    <span>A CSS selector can contain more than one simple selector. Between the simple selectors, we can include a
+        combinator.
+        There are four different combinators in CSS:</span>
+    <ul>
+        <li>descendant selector (space)</li>
+        <li>child selector (>)</li>
+        <li>adjacent sibling selector (+)</li>
+        <li>general sibling selector (~)</li>
+    </ul>
+
+    <h3>Descendant Selector (space)</h3>
+    <pre>
+    The descendant selector matches all elements that are descendants of a specified element.
+
+    <div>The following example selects all (p) elements inside (div) elements 
+<p>Paragraph 1 in the div.</p>
+<p>Paragraph 2 in the div.</p>
+<section><p>Paragraph 3 in the div.</p></section>
+<p>Paragraph 4 in the div.</p>
+</div>
+</pre>
+    
+<h3>Child Selector (>)</h3>
+<p>The child selector selects all elements that are the children(direct) of a specified element.
+
+    The following example selects all <p> elements that are children of a <div> element:
+</p>
+<style>
+    div > p{
+        color:chartreuse;
+    }
+</style>
+<div>The following example selects all (p) elements inside (div) elements 
+    <p>Paragraph 1 in the div.</p>
+    <p>Paragraph 2 in the div.</p>
+    <section>
+        <!-- Not Child but Desendent -->
+        <p>Paragraph 3 in the div.</p>
+    </section>
+    <p>Paragraph 4 in the div.</p>
+</div><br>
+
+<h3>Adjacent Sibling Selector (+)</h3>
+<pre>
+    The adjacent sibling selector is used to select an element that is directly after another specific element.
+
+    Sibling elements must have the same parent element, and "adjacent" means "immediately following".
+
+    The following example selects the first p element that are placed immediately after (div) elements:
+</pre>
+<style>
+    div+p{
+        background-color:lightgoldenrodyellow;
+    }
+</style>
+    
+<div>
+<p>Paragraph 1 in the div.</p>
+
+<p>Paragraph 2 in the div.</p>
+</div>
+
+<p>Paragraph 3. After a div.</p>
+
+<p>Paragraph 4. After a div.</p>
+<div>
+<p>Paragraph 5 in the div.</p>
+
+<p>Paragraph 6 in the div.</p>
+</div>
+<p>Paragraph 7. After a div.</p>
+
+<p>Paragraph 8. After a div.</p>
+
+<br>
+
+<h4>General Sibling Selector (~)</h4>
+<pre>
+The general sibling selector selects all elements that are next siblings of a specified element.
+
+The following example selects all (p) elements that are next siblings of (ul) elements: 
+</pre>
+<br>
+<span>The general sibling selector (~) selects all elements that are next siblings of a specified element.</span>
+
+<style>
+    ul ~ p
+    {
+        background-color: linen;
+    }
+    p{
+        color: black;
+    }
+</style>
+
+<p style="color: black;">Paragraph 1.</p>
+
+<ul>
+<p>Paragraph 2.</p>
+</ul>
+
+<p>Paragraph 3.</p>
+<code>Some code.</code>
+<p>Paragraph 4.</p>
+</body>
+
+</html>

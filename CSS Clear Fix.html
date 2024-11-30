@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Clear Fix</title>
+    <link rel="stylesheet" href="CSS Clear Fix.css" />
+</head>
+<body>
+    <header>
+        <h1>CSS Layout - Clear and Clearfix
+        </h1>
+    </header>
+<h1 class="h1">The Clear Property</h1>
+<div class="div">
+  When we use the float property, and we want the next element below (not on right or left), we will have to use the clear property.
+
+  The clear property specifies what should happen with the element that is next to a floating element.
+
+  The clear property can have one of the following values:
+  <p id="para">    1. none - The element is not pushed below left or right floated elements. This is default
+
+    2. left - The element is pushed below left floated elements
+
+    3. right - The element is pushed below right floated elements
+
+    4. both - The element is pushed below both left and right floated elements
+
+    5. inherit - The element inherits the clear value from its parent</p>
+    
+</div>
+
+<br>
+<br>
+<br>
+
+<h2> Example:
+</h2>
+<h3>Without clear</h3>
+    
+<div class="mdiv">
+        <div class="box1">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur distinctio eligendi dolorum eius, magni, nulla suscipit optio quia, commodi voluptas doloremque obcaecati beatae molestias quibusdam aperiam animi minima quo inventore.
+    <br>
+    <h3>Float: left</h3>
+    </div>
+    <div class="box2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea corporis quidem fuga illum ipsam tempora dolor natus, quaerat atque! Architecto libero natus iste repellendus fugiat, quam reprehenderit impedit sit omnis?
+        <br>
+        <h3>Float: right</h3>
+    </div>
+    <div class="box3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non incidunt ab veritatis, amet perspiciatis nihil similique modi dolorem reprehenderit cumque quos molestiae, atque officia ipsam, aperiam doloremque nesciunt tempora. Et!</div>
+    
+</div>
+<br>
+<br>
+<br>
+<h3>With clear</h3>
+
+<div class="mdiv">
+    <div class="box4">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur distinctio eligendi dolorum eius, magni, nulla suscipit optio quia, commodi voluptas doloremque obcaecati beatae molestias quibusdam aperiam animi minima quo inventore.
+        <br>
+        <h3>Float: left</h3>
+    </div>
+    <div class="box5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea corporis quidem fuga illum ipsam tempora dolor natus, quaerat atque! Architecto libero natus iste repellendus fugiat, quam reprehenderit impedit sit omnis?
+        <br>
+        <h3>Float: right</h3>
+    </div>
+    <div class="box6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non incidunt ab veritatis, amet perspiciatis nihil similique modi dolorem reprehenderit cumque quos molestiae, atque officia ipsam, aperiam doloremque nesciunt tempora. Et!
+        <br>
+        <h3 style="text-align: center;">clear: both</h3>
+    </div>
+    
+</div>
+
+
+
+</body>
+</html>

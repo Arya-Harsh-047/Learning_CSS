@@ -1,0 +1,63 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: url("light_background.jpg") no-repeat fixed center;
+
+}
+
+.pre1{
+    font-size: 17px;
+    margin: 1%;
+}
+.link{
+    text-decoration: none;
+    border: 1px solid palevioletred;
+    border-radius: 10px;
+    padding: 2px;
+    background-color: antiquewhite;
+}
+.link:hover{
+    background-color:khaki;
+    border-color: plum;
+}
+.div1{
+    text-decoration-line: overline;
+    text-decoration-line: underline;
+    text-decoration-line:line-through;
+    text-decoration-line: overline underline;
+}
+.pre2{
+    font-size: 17px;
+    margin: 1%;
+    text-decoration-line: underline overline;
+    text-decoration-color:darkorange;
+}
+.pre3{
+    font-size: 17px;
+    margin: 1%;
+}
+#para1{
+    text-decoration-line: line-through;
+    text-decoration-color:firebrick;
+    text-decoration-style: dashed;
+    text-decoration-style: dotted;
+}
+
+.div2{
+    /* text-decoration-line: line-through;
+    text-decoration-color:coral;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 4px; */
+
+                    /*OR*/
+
+    /* text-decoration: line-through coral dotted 4px; */
+    text-decoration: underline salmon solid 5px;
+}
+.pre4{
+    font-size: 17px;
+    margin: 1%;
+    text-decoration: line-through darkmagenta solid 1px;
+    text-transform: lowercase;
+    text-transform: uppercase;
+    text-transform: capitalize;
+}

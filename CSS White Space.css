@@ -1,0 +1,55 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    background: url("gilter_background.jpg") no-repeat fixed center;
+    /* color: azure; */
+}
+.header{
+    font-size: 50px;
+    text-align: center;
+    color: transparent;
+    background-image: url("rainbow.jpg");
+    background-size: cover;
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.box1{
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 7px;
+    font-size: 17px;
+    /* white-space: normal;   */
+    /*(default) wrap*/
+
+    white-space: nowrap;
+
+    /* overflow: hidden; */
+}
+.box2{
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 7px;
+    font-size: 17px;
+
+    /* white-space: pre-wrap; */
+
+    white-space: pre;       
+    
+    /*Work same as pre tag in HTML & text also desplayed as in nowrap*/
+    /* overflow: hidden; */
+}
+.box3{
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 7px;
+    font-size: 17px;
+    white-space: pre-line;       /*Work same as pre tag in HTML, but can't support multiple spaces at a same time & only support wrap */
+}
+.box4{
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 7px;
+    font-size: 17px;
+    white-space: pre-line;       /*Work same as pre tag in HTML, but can't support multiple spaces at a same time & only support wrap */
+}

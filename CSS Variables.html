@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <link rel="stylesheet" href="CSS Variables.css">
+</head>
+<body>
+  <div id="main">
+    <h1>CSS Variables - The var() Function</h1>
+    <br>
+    <br>
+    <pre>
+    The var() function is used to insert the value of a CSS variable.
+            
+    It allows us to use consistent values across multiple properties and styles in our code.
+
+    <b>Note: </b>A good way to use CSS variables is when it comes to the colors of your design.
+    Instead of copy and paste the same colors over and over again, you can place them in variables.
+    </pre>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h2>Syntax of the var() Function:   </h2>
+    <br>
+    <pre>
+        The var() function is used to insert the value of a CSS variable.
+
+        The syntax of the var() function is as follows:
+        
+        <b>var(--name, value)</b>
+
+
+        Value	  Description
+        name	   Required. The variable name (must start with two dashes)
+        value	   Optional. The fallback value (used if the variable is not found)
+
+        Note: The variable name must begin with two dashes (--) and it is case sensitive!    
+    </pre>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h2>How var() Works: </h2>
+    <br>
+<pre>
+    To create a variable with global scope, declare it inside the :root selector. The :root selector matches the document's root element.
+
+    To create a variable with local scope, declare it inside the selector that is going to use it.
+
+    The following example is equal to the example above, but here we use the var() function.
+
+    First, we declare two global variables (--blue and --white). Then, we use the var() function to insert the value of the variables later in the style sheet:
+</pre>
+        
+  </div>
+</body>
+</html>

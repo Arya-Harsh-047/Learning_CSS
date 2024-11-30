@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How To Add CSS</title>
+    <link rel="stylesheet" href="External_CSS.CSS">
+</head>
+<style>
+    * {
+
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    ::marker {
+        color: salmon;
+        font-size: larger;
+
+    }
+</style>
+
+<body>
+    <h1>Three Ways to Insert CSS </h1>
+    <div>There are three ways of inserting a style sheet:
+        <ul>
+            <li>External CSS</li>
+            <li>Internal CSS</li>
+            <li>Inline CSS</li>
+        </ul>
+    </div>
+    <br>
+    <h2>1. External CSS</h2>
+    <div>With an external style sheet, you can change the look of an entire website by changing just one file!
+        <br>
+        Each HTML page must include a reference to the external style sheet file inside the (link) element, inside the
+        head section.
+    </div><br><br>
+    <div class="form">
+        <form method="get" name="input" action="">
+            First Name:<input type="text" name="Name" size="20" id="fname">
+            Last Name:<input type="text" name="Name" size="20" id="lname"><br>
+            <input type="button" value="Submit Button" class="btn" id="btn">
+        </form>
+    </div>
+
+    <br>
+    <br>
+
+    <h2>2. Internal CSS</h2>
+
+    <pre>
+        An internal style sheet may be used if one single HTML page has a unique style.
+        
+        The internal style is defined inside the (style) element, inside the head section.
+    </pre>
+    <style>
+        /* Internal CSS */
+        .Lorem {
+            color: tomato;
+            font-weight: 600;
+            font-style: italic;
+        }
+
+        .Lorem:hover {
+            color: orangered;
+            cursor: progress;
+
+        }
+    </style>
+    <p class="Lorem">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur a reprehenderit blanditiis
+        cum aperiam magni commodi facere aliquam neque officia at ab quam illo quis distinctio, praesentium asperiores
+        dolore culpa.</p>
+    <br>
+    <br>
+    <br>
+
+    <h2>3. Inline CSS</h2>
+    <Pre>
+        An inline style may be used to apply a unique style for a single element.
+
+To use inline styles, add the style attribute to the relevant element. The style attribute can contain any CSS property. 
+    </Pre>
+    <br>
+
+    <span style="color: darksalmon; font-weight:700;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis
+        quae voluptatum, accusamus assumenda harum fugiat suscipit et, ullam provident earum facilis. Odio, beatae
+        tempora cumque amet alias officiis dolorum vel, corrupti fugiat ipsa corporis, aspernatur labore atque rem quo
+        nam eos? Repellendus voluptatem totam aut pariatur, dicta natus itaque obcaecati a delectus? Culpa, cumque quas
+        itaque dolores esse adipisci. Modi debitis ex ullam sequi aperiam magni, quidem porro?
+    </span>
+    <br>
+    <br>
+    <br>
+
+    <h1>Cascading Order</h1>
+    <pre>What style will be used when there is more than one style specified for an HTML element?
+
+    All the styles in a page will "cascade" into a new "virtual" style sheet by the following rules, where number one    has the highest priority:
+    <ol>
+    <li>Inline style (inside an HTML element)</li>
+    <li>External and internal style sheets (in the head section)</li>
+    <li>Browser default</li>
+    </ol>
+    <b>Note:</b> inline style has the highest priority, and will override external and internal styles and browser defaults.
+    </pre>
+
+
+</body>
+
+</html>

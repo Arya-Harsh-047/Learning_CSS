@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     background: url("purple_lights.jpg") no-repeat fixed center;
+}
+h1{
+    color: transparent;
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 1px;
+    background-image: url("rainbow.jpg");
+    background-position: center;
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+h2{    
+    letter-spacing: 1px;
+    color: white;
+    text-shadow: 3px 4px 6px blue, 0 0 25px lightblue;
+    font-size: 30px;
+}
+h3{
+    letter-spacing: 1px;
+    color: white;
+    text-shadow: 3px 4px 6px mediumvioletred, 0 0 25px violet;
+    font-size: 25px;
+}
+#main{
+    margin-left: 30px;
+}
+#main p,span,pre{
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#tproperty{
+    width: 150px;
+    height: 150px;
+    background: lightblue;
+    padding: 10px;
+    box-sizing: border-box;
+    /* transition-property: width; */
+    /* transition-property: width ,height ,background-color; */
+
+    transition-property: all;/* all means all the property present in element (width, height, padding, margin, background-color etc.*/
+
+    /* transition-duration: 1.5s, 1.5s, 1.5s; */
+    transition-duration: 1.5s; /*Shorthand for above line if all duration is same.*/
+    
+}
+
+#tproperty:hover{
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(to left, orangered, orange);
+    color: aliceblue;
+}
+
+#tdproperty{
+    width: 200px;
+    height: 200px;
+    background: lightgreen;
+    padding: 10px;
+    box-sizing: border-box;
+
+    transition-property: all;
+
+    transition-duration: 1.5s, 1.5s, 1.5s;
+    
+    /*Shorthand for above line if all duration is same.*/
+    transition-duration: 1.5s;
+    
+}
+
+#tdproperty:hover{
+    width: 270px;
+    /* height: 270px; */
+    background: linear-gradient(to left, #d38312,plum,#a83279);
+    color: aliceblue;
+}
+
+#tfunction{
+    width: 200px;
+    height: 200px;
+    background: salmon ;
+    padding: 10px;
+    box-sizing: border-box;
+
+    transition-property: all;
+
+    transition-duration: 1.5s;
+
+    /* transition-timing-function: ease; */
+    /* transition-timing-function: linear; */
+    /* transition-timing-function: step-end; */
+    /* transition-timing-function: step-start; */
+    /* transition-timing-function: ease-in; */
+    /* transition-timing-function: ease-out; */
+    /* transition-timing-function: ease-in-out; */
+    /* transition-timing-function: steps(4); */
+    /* transition-timing-function: steps(4,end); */
+    /* transition-timing-function: steps(4,start); */
+    transition-timing-function: cubic-bezier(1.0,0.7,1.0.0.1);
+    
+}
+
+#tfunction:hover{
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(to right, #d38312,plum,#a83279);
+    color: aliceblue;
+}
+
+#tdelay{
+    width: 200px;
+    height: 200px;
+    background: lightsalmon;
+    padding: 10px;
+    box-sizing: border-box;
+
+    transition-property: all;
+
+    transition-duration: 2s;
+
+    transition-timing-function: linear; 
+
+    transition-delay: 2s;
+    
+}
+
+#tdelay:hover{
+    width: 400px;
+    /* height: 270px; */
+    background: linear-gradient(to left, #d38312,plum,#a83279);
+    color: aliceblue;
+}
+
+#transition
+{
+    width: 250px;
+    height: 200px;
+    background: orchid;
+    margin: auto; 
+    padding: 10px; 
+    box-sizing: border-box;
+    transition: all 1.5s ease-in-out 1s;
+    transition: all 1.5s cubic-bezier(1.0,0.7,1.0,0.2) 1s;
+
+}
+
+#transition:hover{
+    width: 350px;
+    height: 350px;
+    background:linear-gradient(to right, #a83279, #d38312); 
+    color: antiquewhite;
+}

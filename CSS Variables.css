@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+:root{
+    --text-shadow: 3px 4px 6px blue, 0 0 25px lightblue;
+
+    --text-shadow: 3px 4px 6px orangered, 0 0 25px orange;
+
+    --h1color:transparent;
+
+    /* --h2color:lightsalmon; */
+    --h2color:azure;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     background: url("purple_lights.jpg") no-repeat fixed center;
+}
+h1{
+    /* color: transparent; */
+    color: var(--h1color);
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 1px;
+    background-image: url("rainbow.jpg");
+    background-position: center;
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+h2{    
+    letter-spacing: 1px;
+    /* color: white; */
+    color: var(--h2color);
+    
+    /* text-shadow: 3px 4px 6px blue, 0 0 25px lightblue; */
+    text-shadow: var(--text-shadow);
+    font-size: 30px;
+}
+
+#main{
+    margin-left: 30px;
+}
+#main p,span,pre{
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

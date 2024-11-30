@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cascade, Specificity & Inheritance</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Hello World</h1>
+    <p class="my-intro">Hii, My name is Harsh arya.</p>
+
+    <h2 harsh="arya">Web Technologies</h2>
+    <ul class="web">
+        <li class="html" id="html">HTML</li>
+        <li class="css" id="css">CSS</li>
+        <li class="js" id="js">Javascript</li>
+        <li class="react" id="react">React</li>
+        <li class="tailwind" id="tailwind">tailwind</li>
+        <br>
+        <div>Hi, My name is somthing</div>
+    </ul>
+    <br>
+    <button>Submit</button>
+
+
+    <h2>What is Specificity?</h2>
+    <p>
+    If there are two or more CSS rules that point to the same element, the selector with the highest specificity value will "win", and its style declaration will be applied to that HTML element.
+    </p>
+<br>
+<br>
+    <h2>Specificity Hierarchy</h2>
+    <p>Every CSS selector has its place in the specificity hierarchy.</p><br>
+    <p>There are four categories which define the specificity level of a selector:</p>
+    <ol>
+        <li><h4>Inline styles</h4></li>
+        <li><h4>IDs: </h4><p>Example: #navbar</p></li>
+        <li><h4>Classes, pseudo-classes, attribute selectors: </h4><p>Example: .test, :hover, [href]</p></li>
+        <li><h4>Elements and pseudo-elements: </h4><p>Example: h1, ::before</p></li>
+    </ol>
+</body>
+</html>

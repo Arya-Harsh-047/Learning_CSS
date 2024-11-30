@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Padding</title>
+    <link rel="stylesheet" href="CSS Padding.css" />
+  </head>
+  <body>
+    <h1 class="header">CSS Padding</h1>
+    <pre class="pre1">
+    Padding is used to create space around an element's content, inside of any defined borders.
+<p id="padding50">
+    This element has a padding of 30px
+</p>
+    </pre>
+<br>
+<br>
+<br>
+
+<h1>Padding - Individual Sides</h1>
+<pre class="pre2"> CSS has properties for specifying the Padding for each side of an element:
+
+   1. Padding-top
+   2. Padding-right
+   3. Padding-bottom
+   4. Padding-left
+
+All the padding properties can have the following values:
+    
+   a. auto - the browser calculates the Padding
+   b. length - specifies a Padding in px, pt, cm, etc.
+   c. % - specifies a Padding in % of the width of the containing element
+   d. inherit - specifies that the Padding should be inherited from the parent element
+
+Tip: Negative values are allowed.
+
+    Example:
+</pre>
+<p class="paddingll">
+Set different Paddings for all four sides of this "p" element:
+</p>
+<br>
+<br>
+<br>
+<h2>If the Padding property has three values:</h2>
+<pre class="pre3">
+    <p id="Padding3"> Padding: 25px 50px 45px;</p>
+Here,
+    top Padding is 25px
+    right and left Paddings are 50px
+    bottom Padding is 45px</pre>
+<br>
+<br>
+<h2>If the Padding property has two values:</h2>
+<pre class="pre4">
+    <p id="Padding2"> Padding: 25px 50px;</p>
+Here,
+    top and bottom Paddings are 25px
+    right and left Paddings are 50px
+</pre>
+<br>
+<br>
+<h2>If the Padding property has one value:</h2>
+<pre class="pre5">
+    <p id="Padding1"> Padding: 25px </p>
+Here,
+    all four Paddings are 25px
+    all four Paddings are 25px
+</pre>
+<br>
+<br>
+<h2>Calculate the total width:</h2>
+
+<img src="cocktail-75.png" width="350" height="263" alt="Klematis" class="img">
+<div class="calculate">The picture above is 350px wide. The total width of this element is also 350px.</div>
+<!-- here width of div is 320px but after adding padding of 10px on left & right (also 5px+5px border)  it become 350px(320+10+10+5+5= 350px)  -->
+  </body>
+</html>

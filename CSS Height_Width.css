@@ -1,0 +1,24 @@
+body{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: url("clouds_background.jpg") no-repeat fixed center;
+}
+.hw{
+/* width: 800px; */
+width: 50%;
+ /* if we give height in % then no matter what size the browser page is it will automatically adjusted without scrollbar in the bottom*/
+height: 70px;
+border: 1px solid rebeccapurple;
+border-radius: 7px;
+margin-left: 20px;
+padding: 0 0 0 10px;
+}
+.para{
+    width:70%; /*70% of the width of above div i.e: 800px*70% */
+    height: fit-content;
+}
+.para2{
+    border: 2px solid fuchsia;
+    border-radius: 7px;
+    width: 50%;
+    height: 200px;/*here after assiging 200px high the content of p is overflow outside the border that's why we use min. height*/
+}

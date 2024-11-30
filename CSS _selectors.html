@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+</head>
+<style>
+    *{
+        font-style: italic; /*Universal Selector*/
+    }
+    h1 {
+        color: teal;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+    }
+
+    #xyz {
+        color: darkorchid;
+        text-align: center;
+        font-size: 28px;
+    }
+
+    h1.abc {
+        color: gold;
+        font-size: 29px;
+        text-align: center;
+    }
+    .abc {
+        font-weight: bolder;
+        font-family:Verdana, Geneva, Tahoma, sans-serif
+            }
+</style>
+
+<body>
+    <h1>The CSS element Selector</h1>
+    <pre>
+    The element selector selects HTML elements based on the element name.
+</pre>
+    <br>
+    <h1 id="xyz">The CSS ID Selector</h1>
+    <pre>
+The id selector uses the id attribute of an HTML element to select a specific element.
+
+The id of an element is unique within a page, so the id selector is used to select one unique element!
+</pre>
+    <br>
+    <h1 class="abc">The CSS Class Selector</h1>
+    <pre class="abc">
+The class selector selects HTML elements with a specific class attribute.
+
+To select elements with a specific class, write a period (.) character, followed by the class name.
+</pre>
+<br>
+<h1>The CSS Universal Selector</h1>
+<pre>
+The universal selector (*) selects all HTML elements on the page.
+</pre>
+<br>
+
+</body>
+</html>

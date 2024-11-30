@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     background: url("purple_lights.jpg") no-repeat fixed center;
+}
+h1{
+    color: transparent;
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 1px;
+    background-image: url("rainbow.jpg");
+    background-position: center;
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+h2{
+    letter-spacing: 1px;
+    color: white;
+    text-shadow: 3px 4px 6px blue, 0 0 25px lightblue;
+    font-size: 30px;
+}
+h3{
+    letter-spacing: 1px;
+    color: white;
+    text-shadow: 3px 4px 6px mediumvioletred, 0 0 25px violet;
+    font-size: 25px;
+}
+#main{
+    margin-left: 30px;
+}
+#main p,span,pre{
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.base{
+    margin: 10px 100px;
+    width: 250px;
+    height: 110px;
+    background-color: grey;
+    color: aliceblue;
+
+}
+#perspective{
+    padding: 10px;
+    width: 250px;
+    height: 100px;
+    background-image: linear-gradient(to left, #d38312,#a83279);
+    color: aliceblue;
+    transform: rotateX(0);
+    transform: rotateY(0);
+    transition: transform 1s;
+
+}
+#perspective:hover{
+  
+    /* transform: perspective(100px) rotateX(70deg); */
+    transform:  rotateX(60deg);
+    transform:  rotateY(60deg);
+    perspective: 100px;
+}
+
+#perspectiveNo{
+    padding: 10px;
+    width: 250px;
+    height: 100px;
+    background-image: linear-gradient(to left, #d38312,#a83279);
+    color: aliceblue;
+    transform: rotateX(0);
+    transform: rotateY(0);
+    transition: transform 1s;
+
+}
+#perspectiveNo:hover{
+  
+    transform:  rotateX(60deg);
+    transform:  rotateY(60deg);
+}
+
+#perspectiveOri{
+    padding: 10px;
+    width: 250px;
+    height: 100px;
+    background-image: linear-gradient(to left, #d38312,#a83279);
+    color: aliceblue;
+    transform: rotateY(0);
+    /* transform: rotateY(60deg); */
+    transition: transform 1s;
+    /* perspective: 800px;
+    perspective-origin: top; */
+
+}
+.base1{
+    margin: 10px 100px;
+    width: 250px;
+    height: 110px;
+    background-color: grey;
+    color: aliceblue;
+    perspective: 800px;
+
+    /* position at which the viewer is looking at top side */
+    perspective-origin: top;    
+    perspective-origin: bottom right;    
+    perspective-origin: left bottom;    
+    perspective-origin: 50% 30%;    
+}
+#perspectiveOri:hover{
+  transform: rotateY(60deg);
+  
+}

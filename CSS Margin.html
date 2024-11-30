@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Margin</title>
+    <link rel="stylesheet" href="CSS Margin.css">
+</head>
+<h1>CSS Margins</h1>
+<pre id="pre">Margins are used to create space around elements, outside of any defined borders.
+
+    Example:
+</pre>
+<p id="margin70"> This element has a margin of 70px.</p>
+<br>
+<br>
+<br>
+
+<h1>Margin - Individual Sides</h1>
+<pre class="pre2"> CSS has properties for specifying the margin for each side of an element:
+
+   1. margin-top
+   2. margin-right
+   3. margin-bottom
+   4. margin-left
+
+All the margin properties can have the following values:
+    
+   a. auto - the browser calculates the margin
+   b. length - specifies a margin in px, pt, cm, etc.
+   c. % - specifies a margin in % of the width of the containing element
+   d. inherit - specifies that the margin should be inherited from the parent element
+
+Tip: Negative values are allowed.
+
+    Example:
+</pre>
+<p class="marginall">
+Set different margins for all four sides of this "p" element:
+</p>
+
+<h2>If the margin property has three values:</h2>
+<pre class="pre3">
+    <p id="margin3"> margin: 25px 50px 45px;</p>
+Here,
+    top margin is 25px
+    right and left margins are 50px
+    bottom margin is 45px</pre>
+<br>
+<br>
+<h2>If the margin property has two values:</h2>
+<pre class="pre4">
+    <p id="margin2"> margin: 25px 50px;</p>
+Here,
+    top and bottom margins are 25px
+    right and left margins are 50px
+</pre>
+<br>
+<br>
+<h2>If the margin property has one value:</h2>
+<pre class="pre5">
+    <p id="margin1"> margin: 25px </p>
+Here,
+    all four margins are 25px
+</pre>
+<br>
+<br>
+<h2>The auto Value:</h2>
+<pre class="pre6">
+You can set the margin property to auto to horizontally center the element within its container.
+
+The element will then take up the specified width, and the remaining space will be split equally between the left and right margins.
+
+<p id="marginauto"> This div will be horizontally centered because it has 
+<b> margin: auto;</b></p>
+</pre>
+<br>
+<br>
+
+<h1>The inherit Value</h1>
+<pre class="pre7">This example lets the left margin of the (p id="inherit") element be inherited from the parent element (div):
+</pre>
+<br>
+<div class="inherit">
+    <p id="inherit">This paragraph has an inherited left margin (from the div element).</p>
+</div>
+<br>
+<br>
+<br>
+
+<h2>Margin Collapse</h2>
+<pre class="pre8">
+    Sometimes two margins collapse into a single margin.
+
+
+    Top and bottom margins of elements are sometimes collapsed into a single margin that is equal to the largest of the two margins.
+
+
+    In the example below, the div element has a bottom margin of 30px and the p element has a top margin set to 20px.
+
+
+    Common sense would seem to suggest that the vertical margin between the div and the p would be a total of 50px (30px + 20px). But due to margin collapse, the actual margin ends up being 50px.
+</pre>
+<br>
+<div class="p1">I am div</div>
+<p class="p2">I am paragraph</p>
+</body>
+</html>

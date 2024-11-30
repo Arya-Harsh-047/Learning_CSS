@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     background: url("purple_lights.jpg") no-repeat fixed center;
+}
+h1{
+    color: transparent;
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 1px;
+    background-image: url("rainbow.jpg");
+    background-position: center;
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+h2{
+    letter-spacing: 1px;
+    color: white;
+    text-shadow: 3px 4px 6px blue, 0 0 25px lightblue;
+    font-size: 30px;
+}
+h3{
+    letter-spacing: 1px;
+    color: white;
+    text-shadow: 3px 4px 6px mediumvioletred, 0 0 25px violet;
+    font-size: 25px;
+}
+#main{
+    margin-left: 30px;
+}
+#main p,span,pre{
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#translate{
+    width: 300px;
+    height: 100px;
+    background-color: plum;
+    border: 2px solid black;
+    text-align: justify;    
+    /* word-break: break-all; */
+    padding: 10px;
+}
+
+#translate:hover{
+    
+    /* transform: translate(50px,100px); */
+    transform: translateX(50px);
+    /* transform: translateY(100px); */
+    
+    /*help to transform smoothly */
+    transition: transform 1s;  
+}
+
+#rotate{
+    width: 250px;
+    height: 100px;
+    background-color: burlywood;
+    border: 2px solid black;
+    text-align: center;
+    padding: 10px;
+}
+#rotate:hover{
+    
+    transform: rotate(20deg);  /*Rotate clockwise*/
+    /* transform: rotate(-20deg);  Rotate anti-clockwise */
+    padding: 10px;
+    ; 
+
+}
+#scale{
+    width: 250px;
+    height: 100px;
+    background-image: linear-gradient(to right , lightgreen, plum);
+    color: black;
+    text-align: justify;
+    border: 2px solid black;
+    margin: 10px 100px;
+    padding: 10px;
+
+}
+#scale:hover{
+    
+    transform: scale(1.5,1.5);
+
+    /* increases 1.5 times of its original width*/
+    /* transform: scaleX(1.5); */
+
+    /* increases 1.5 times of its original height*/
+    /* transform: scaleY(1.5); */
+
+
+    /* The transform origin is the point around which a transformation is applied */
+    
+    transform-origin: left bottom; 
+}
+
+#skew{
+    width: 250px;
+    height: 100px;
+    background-color: lightcoral;
+    border: 2px solid black;
+    text-align: justify;
+    padding: 10px;
+}
+#skew:hover{
+    
+    transform: skew(20deg,10deg);
+
+    /* skew 20 degrees along the X-axis */
+    /* transform: skewX(20deg);  */
+
+    /* skew 10 degrees along the Y-axis */
+    /* transform: skewY(10deg); */
+}
+
+#matrix{
+    width: 250px;
+    height: 100px;
+    background-color: lightsalmon;
+    border: 2px solid black;
+    text-align: justify;
+    padding: 10px;
+    margin: 10px 100px;
+}
+#matrix:hover{
+    transform: matrix(1.5,-0.3,0.3,1,0,0);
+}
+
+#trans_origion{
+    width: 250px;
+    height: 100px;
+    background-color: lightpink;
+    border: 2px solid black;
+    text-align: justify;
+    padding: 10px;
+    margin: 10px 100px;
+}
+#trans_origion:hover{
+    
+    transform: rotate(60deg);
+
+    /* The transform origin is the point around which a transformation is applied */
+    
+    transform-origin: top left; 
+
+                /* OR */
+
+    transform-origin: 10% 50%;    
+    transition: transform 1s;
+
+           
+}
+
+#example{
+    width: 250px;
+    height: 100px;
+    background-color: lightgreen;
+    border: 2px solid black;
+    text-align: justify;
+    padding: 10px;
+    margin: 50px 100px;
+    transform: scale(1) rotate(0);
+    transition: transform 1s;
+    
+}
+
+#example:hover{
+    transform: scale(1.2) rotate(-20deg);
+    transform-origin: left top;
+    transform-origin: right top;
+}

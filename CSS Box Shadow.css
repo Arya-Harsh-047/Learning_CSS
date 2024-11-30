@@ -1,0 +1,57 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+
+    background: url("clouds_background.jpg") no-repeat fixed center;
+    box-sizing: border-box;
+}
+.head{
+    font-size: 50px;
+    color:transparent;
+    text-align: center;
+    background-image: url("rainbow.jpg");
+    background-position: center;
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-transform: capitalize;
+
+}
+h2{
+    font-size: 27px;
+    color: azure;
+    text-shadow: 2px 2px 4px palevioletred, 0 0 7px lightcoral, 0 0 25px pink;
+    margin: 15px;
+}
+.para{
+    font-size: 18px;
+    white-space: pre-line;
+    margin: 10px;
+}
+.box{
+    font-size: 18px;
+    width: 400px;
+    height: 150px;
+   margin: 50px 0 0 32%;
+   border: 2px solid magenta;
+   border-radius: 7px;
+   padding: 10px;
+   background-color: lightcyan;
+    /* box-shadow: 4px 4px 10px 0 orchid; */
+
+    /* box-shadow: 4px 4px 10px 10px orchid; */
+
+    /* box-shadow: 4px 4px 10px 0px orchid , 8px 8px 10px 0 orangered; */
+    
+
+    /* box-shadow: 4px 4px 0px 0px orchid , 8px 8px 0px 0 orangered; */
+
+    box-shadow: 4px 4px 5px 0px orange inset, 8px 8px 10px 0 orangered;
+
+
+
+    /* box-shadow: 4px(h-offset) 4px(v-offset) 10px(blur) 0(dhadow spread) orchid inset (for inside shadow); 
+    
+    h-Offset= Horizontal Offset
+    v-Offset= Vertical Offset
+    */
+}

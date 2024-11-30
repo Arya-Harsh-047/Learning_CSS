@@ -1,0 +1,45 @@
+body{
+    font-family: cursive;
+}
+
+.web{
+    font-weight: 900;
+}
+li#html.html{
+background-color: lightskyblue;
+/* specificity (1,1,1) */
+}
+#html.html{
+    background-color:lightpink;
+    /* specificity (1,1,0) */
+}
+#html{
+    background-color: lightgreen;
+    /* specificity (1,0,0) */
+}
+.html{
+    background-color: lightsalmon;
+    color:black;
+    /* specificity (0,1,0) */
+}
+li{
+    color:orchid;
+    background-color:lavender;
+    /* specificity (0,0,1) */
+}
+li{
+    color:orangered;
+        /* specificity (0,0,1) */
+
+}
+li{
+    color:coral;
+    background-color: lavenderblush;
+        /* specificity (0,0,1) */
+
+}
+button{
+font-family: inherit;
+/* inherit from parent body */
+/* because it inherit defalt font family Airel from browser */
+}

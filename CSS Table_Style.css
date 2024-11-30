@@ -1,0 +1,41 @@
+body{
+    font-family: "Sofia", sans-serif;
+    background: url("clouds_background.jpg") no-repeat fixed center;
+}
+
+.table{
+    font-size: 19px;
+    /* border: 2px solid fuchsia; */
+    border-bottom: 2px solid lawngreen;
+    width: 80%;
+    border-collapse: collapse;
+}
+th{
+    font-weight: 900;
+    height: 3%;
+    /* border: 1px solid fuchsia; */
+    border-bottom: 2px solid lawngreen;
+    text-align: left;
+    padding: 10px;
+    background-color: plum;
+    letter-spacing: 2px;
+    
+}
+td{
+    height: 5%;
+    /* border: 1px solid fuchsia; */
+    border-bottom: 2px solid lawngreen;
+    text-align: left;
+    padding: 15px;
+    letter-spacing: 2px;    
+}
+tr:hover{
+   
+   color: whitesmoke; 
+   background-color: lightskyblue;
+   text-shadow: 1px 1px 4px lightgreen, 0 0 20px limegreen, 0 0 5px lawngreen;
+}
+.para{
+    font-size: 19px;
+    letter-spacing: 2px;
+}

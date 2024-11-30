@@ -1,0 +1,95 @@
+
+body{
+background: url("light_background.jpg") no-repeat fixed center;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+#pre{
+    font-size: 20px;
+}
+#margin70{
+    border: 3px solid orange;
+    border-radius: 7px;
+    margin: 70px;
+}
+.pre2{
+font-size: 16px;
+}
+
+.marginall{
+    border: 3px solid orchid;
+    border-radius: 7px;
+    /* margin-top: 80px;
+    margin-right: 80px;
+    margin-bottom: 90px;
+    margin-left: 70px; */
+
+    margin: 80px 80px 90px 70px; /*Margin - Shorthand 
+    margin-top
+    margin-right
+    margin-bottom
+    margin-left*/
+}
+.pre3{
+    font-size: 16px;
+}
+#margin3{
+    border: 3px solid dodgerblue;
+    border-radius: 7px;
+    margin: 25px 50px 45px;
+}
+.pre4{
+    font-size: 16px;
+}
+#margin2{
+    border: 3px solid tomato;
+    border-radius: 7px;
+    margin: 25px 50px;
+}
+.pre5{
+    font-size: 16px;
+}
+#margin1{
+    border: 3px solid fuchsia;
+    border-radius: 7px;
+    margin: 25px;
+}
+.pre6{
+    font-size: 16px;
+}
+#marginauto{
+    border: 3px solid #00FA9A;
+    width: 500px;
+    border-radius: 7px;
+    margin: auto;
+}
+.pre7{
+    font-size: 16px;
+}
+.inherit{
+    border: 2px solid olivedrab;
+    width: 600px;
+    margin-left: 50px;
+    padding: 10px;
+    font-size: 16px;
+}
+#inherit{
+    margin-left: inherit
+
+}
+.pre8{
+    font-size: 16px;
+}
+.p1
+{
+    margin: 0 0 30px 0;
+    padding-left: 50px;
+    border: 2px solid blueviolet;
+    width: 200px;
+}
+.p2{
+    margin: 20px 0 0 0;
+    padding-left: 50px;
+    border: 2px solid orchid;
+    width: 200px;
+}

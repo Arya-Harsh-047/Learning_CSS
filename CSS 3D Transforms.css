@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     background: url("purple_lights.jpg") no-repeat fixed center;
+}
+h1{
+    color: transparent;
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 1px;
+    background-image: url("rainbow.jpg");
+    background-position: center;
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+h2{
+    letter-spacing: 1px;
+    color: white;
+    text-shadow: 3px 4px 6px blue, 0 0 25px lightblue;
+    font-size: 30px;
+}
+h3{
+    letter-spacing: 1px;
+    color: white;
+    text-shadow: 3px 4px 6px mediumvioletred, 0 0 25px violet;
+    font-size: 25px;
+}
+#main{
+    margin-left: 30px;
+}
+#main p,span,pre{
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.base{
+    margin: 10px 100px;
+    width: 250px;
+    height: 110px;
+    background-color: grey;
+    color: aliceblue;
+}
+#rotateX{
+    padding: 10px;
+    width: 250px;
+    height: 100px;
+    background-image: linear-gradient(to left, #d38312,#a83279);
+    color: aliceblue;
+    transform: rotateX(0);
+    transition: transform 1s;
+
+}
+#rotateX:hover{
+  
+    transform: perspective(800px) rotateX(70deg);
+    /* transform-origin: left top; */
+}
+#rotateY{
+    padding: 10px;
+    width: 250px;
+    height: 100px;
+    background-image: linear-gradient(to left, #d38312,#a83279);
+    color: aliceblue;
+    transform: rotateY(0);
+    transition: transform 1s;
+
+}
+#rotateY:hover{
+    
+    transform: perspective(800px) rotateY(50deg);
+    /* transform-origin: right top; */
+    /* transform-origin: right; */
+}
+#rotateZ{
+    padding: 10px;
+    width: 250px;
+    height: 100px;
+    background-image: linear-gradient(to left, #d38312,#a83279);
+    color: aliceblue;
+    transform: rotateZ(0);
+    transition: transform 1s;
+
+}
+#rotateZ:hover{
+    transform: perspective(800px) rotateZ(50deg);
+    /* transform-origin: right bottom; */
+}
+#translateZ{
+    padding: 10px;
+    width: 250px;
+    height: 100px;
+    background-image: linear-gradient(to left, #d38312,#a83279);
+    color: aliceblue;
+    transform: rotateY(0) translateZ(0);
+    transition: transform 1s;
+
+}
+#translateZ:hover{
+    transform: perspective(800px) rotateY(60deg) translateZ(100px);
+    transform-origin: right center;
+}
+#translate3d{
+    padding: 10px;
+    width: 250px;
+    height: 100px;
+    background-image: linear-gradient(to left, #d38312,#a83279);
+    color: aliceblue;
+    /* transform: rotateY(0) translate3d(0); */
+    transform: rotate(0) translate3d(0);
+    transition: transform 1s;
+
+}
+#translate3d:hover{
+    /* transform: perspective(800px) rotateY(60deg) translate3d(50px,60px,100px); */
+    transform: perspective(800px) rotate(0deg) translate3d(50px,60px,100px);
+    /* transform-origin: right center; */
+}
+
+#ScaleZ{
+    padding: 10px;
+    width: 250px;
+    height: 100px;
+    background-image: linear-gradient(to left, #d38312,#a83279);
+    color: aliceblue;
+    /* transform: scaleZ(1) rotateX(0) ; */
+    transform: scaleZ(1) rotateY(0) ;
+    transition: transform 1s;
+
+}
+#ScaleZ:hover{
+    /* transform: perspective(800px)  scaleZ(2) rotateX(60deg); */
+    transform: perspective(800px)  scaleZ(3) rotateY(60deg);
+    /* transform-origin: right center; */
+}
+
+#Scale3d{
+    padding: 10px;
+    width: 250px;
+    height: 100px;
+    background-image: linear-gradient(to left, #d38312,#a83279);
+    color: aliceblue;
+    /* transform: scale3d(1,1,1) rotateZ(0) ; */
+    /* transform: scale3d(1,1,1) rotateX(0) ; */
+    transform: scale3d(1,1,1) rotateY(0) ;
+    transition: transform 1s;
+
+}
+#Scale3d:hover{
+    /* transform: perspective(800px)  scale3d(2,2,1) rotateX(60deg); */
+    /* transform: perspective(800px)  scale3d(2,2,1) rotateZ(60deg); */
+    transform: perspective(800px)  scale3d(2,2,1) rotateY(60deg);
+    /* transform-origin: right center; */
+}

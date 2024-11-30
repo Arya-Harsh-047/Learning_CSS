@@ -1,0 +1,164 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url("purple_lights.jpg") no-repeat fixed center;
+    background-size: cover;
+}
+body>h1{
+    text-align:center;
+    color: transparent;
+    background : url("rainbow.jpg");
+    background-size: cover;
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip:text;
+    font-size: 50px;
+}
+
+pre{
+    font-size: 18px;
+    margin: 20px;
+    padding: 20px;
+    /* border: 1px solid black; */
+}
+p{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    width: 250px;
+}
+h2{
+    color: white;
+    text-shadow: 2px 3px 6px lightblue, 2px 2px 25px powderblue, 2px 3px 1px lightseagreen ;
+}
+.navbar
+{
+margin: 5px;
+display: flex;
+gap: 100px;
+}
+.ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 250px;
+    background-color: whitesmoke;
+}
+
+.ul li a{
+   display: block;
+   padding: 18px 20px; 
+   text-decoration: none;
+   color: black;
+   font-size: 17px;
+   
+}
+
+.active{
+    background-image: linear-gradient(to left, orange, orangered);
+}
+/* li a:hover {
+    background-color: #555;
+    color: white;
+} */
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+ 
+
+#nav3 ul li a{
+ display: block;
+   padding: 18px 20px; 
+   text-decoration: none;
+   color: black;
+   font-size: 17px;   
+   text-align: center;
+   border-bottom: 1px solid black;
+}
+/* #nav3 li:last-child{
+    background-color: aquamarine;
+} */
+#nav3 > ul > li:nth-child(4) > a{
+    border-bottom: none;
+}
+
+#vertical{
+    display: flex;
+    gap: 50px;
+}
+
+#nav4{
+    width: 650px;
+    margin: 0 0 0px 50px;
+}
+#nav4 ul {
+    background-color: aliceblue;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+#nav4 ul li
+{
+    display: inline-block;
+    padding-left: 50px;
+    /* padding-right: 20px; */
+    /* padding-top: 10px; */
+    /* padding-bottom: 10px; */
+}
+
+#nav4 ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #000;
+    display: block;
+}
+#nav5{
+    width: 650px;
+    
+}
+#nav5>ul{
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+#nav5 ul li
+{
+    /* display: inline-block; */
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 35px;
+    float: left;
+    background-color: aquamarine;
+
+}
+
+#nav5 ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #000;
+}
+
+.active{
+    background-image: linear-gradient(to left, orange, orangered);
+}
+.activa{
+    background-image: linear-gradient(to right, #cc2b5e , #753a88);
+}
+
+#nav4 li a:hover:not(.activa) {
+    background-color: aliceblue;
+    color: orangered;
+}
+#nav5 li a:hover:not(.activa) {
+    background-color: aquamarine;
+    color: orangered;
+}

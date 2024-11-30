@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pseudo-elements</title>
+</head>
+<style>
+    p::first-line{
+        color:orangered;
+        font-variant:small-caps;
+    }
+    div::first-letter{
+        color: orange;
+        font-size: 50px;
+    }
+    pre.intro::first-letter{
+        color:fuchsia;
+        font-weight: bolder;
+        font-size:35px;
+    }
+    h3::before{
+        content: url(email.png);
+    }
+    h4::after{
+        content: url(email.png);
+    }
+    ::marker{
+        color: rgb(203, 22, 203);
+        font-size: 18px;
+        font-weight: bolder;
+    }
+    pre#bev::after{
+        content:url(cocktail-75.png);
+    }
+    pre#snacks::after{
+        content:url(snacks-64.png);
+    }
+
+    ::selection{
+        color: wheat;
+        background-color: darkorchid;
+    }
+</style>
+<body>
+    <h1>What are Pseudo-Elements?</h1>
+    <Pre>
+        A CSS pseudo-element is used to style specified parts of an element.
+
+        For example, it can be used to:
+        <ul>
+        <li>Style the first letter, or line, of an element</li>
+       <li> Insert content before, or after, the content of an element</li>
+        </ul>
+    </Pre>
+
+<h2>Syntax</h2>
+<p>The syntax of pseudo-elements:</p>
+
+<pre>
+ selector::pseudo-element 
+{
+ property: value;
+}
+<br>
+
+</pre>
+<h2>1. The ::first-line Pseudo-element</h2>
+<p>
+    The ::first-line pseudo-element is used to add a special style to the first line of a text.
+<br>
+    This following example formats the first line of the text in all "p" elements:  <br><br>
+    <b>Note:</b> The ::first-line pseudo-element can only be applied to block-level elements.
+</p>
+<br>
+<br>
+
+<h2>2. The ::first-letter Pseudo-element</h2>
+<div>The ::first-letter pseudo-element is used to add a special style to the first letter of a text.
+<br>
+The following example formats the first letter of the text in all "p" elements:
+
+<b>Note</b>: The ::first-letter pseudo-element can only be applied to block-level elements.
+</div>
+<br>
+
+<span><b>You can combine the ::first-letter and ::first-line pseudo-elements to add a special effect to the first letter and the first line of a text</b></span>
+<br><br><br>
+
+<h2>3. Pseudo-elements and HTML Classes</h2>
+
+<h5>Pseudo-elements can be combined with HTML classes:</h5>
+
+<pre class="intro">
+This is introduction of pseudo element & HTML classes Selectors
+This is a paragraph with some text. A bit more text even.
+</pre>
+<br><br>
+
+<h2>4. The ::before & after Pseudo-element</h2>
+    <span>The ::before & after pseudo-element can be used to insert some content before the content of an element.
+    <br>
+    The following example inserts an image before the content of each "h3" element:
+    </span>
+<br>
+<br>
+<h3>This is heading & example of ::before Pseudo-element </h3>
+<br>
+<br>
+<h4>This is heading & example of ::after Pseudo-element </h4>
+
+<br>
+<br>
+<br>
+
+<h2>5. The ::marker Pseudo-element</h2>
+<pre style="font-family: Arial, Helvetica, sans-serif;">The ::marker pseudo-element selects the markers of list items.</pre>
+
+
+<pre style="color: blueviolet; font-weight: bolder; font-size: 20px; font-family:Verdana, Geneva, Tahoma, sans-serif;" id="bev">Beverages</pre>   
+<ul style="font-family:Verdana, Geneva, Tahoma, sans-serif;">
+    
+    <li>Ginger Ale</li>
+    <li>Mohito</li>
+    <li>Tonic Water</li>
+</ul>
+
+<pre style="color: blueviolet; font-weight: bolder; font-size: 20px;font-family:Verdana, Geneva, Tahoma, sans-serif" id="snacks">Snackes</pre>
+
+<ol style="font-family:Verdana, Geneva, Tahoma, sans-serif;">
+
+    <li>French Fries</li>
+    <li>Sandwich</li>
+    <li>Mac & Cheese</li>
+</ol>
+<br>
+
+
+<h2>6. The ::selection Pseudo-element</h2>
+<div style="font-size: 15px;">The ::selection pseudo-element matches the portion of an element that is selected by a user.
+   <br> 
+The following CSS properties can be applied to ::selection: color, background, cursor, and outline.
+<br>
+<h1>Select some text on this page:</h1>
+</div>
+</body>
+</html>

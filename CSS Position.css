@@ -1,0 +1,101 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background: url("gilter_background.jpg") no-repeat fixed center;
+}
+.head{
+    font-size: 60px;
+    text-align: center;
+    color: transparent;
+    background-image: url("design.jpg");
+    background-size: cover;
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+
+}
+.para{
+    font-size: 18px;
+    margin-left: 10px;
+}
+.pre1{
+    font-size: 18px;
+}
+.static{
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 7px;
+    background-color: plum;
+    position:static;
+}
+.relative{
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 7px;
+    background-color: plum;
+    position: relative;
+    left: 50px;
+    /* top: 50px; */
+    /* top: -50px; */
+    bottom: 10px;
+}
+#box{
+    width: 500px;
+    height: 300px;
+    border: 2px solid #000;
+    background-color: lightcyan;
+    position: relative;
+
+}
+.absolute{
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 7px;
+    background-color: plum;
+    position: absolute;   /* Absolute is working on z-axis*/
+    right: 50px;
+    top: 50px;
+    /* top: -50px; */
+    /* bottom: 10px; */
+}
+.fixed{
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 7px;
+    background-color: plum;
+    position: fixed;   /* fixed is working viewport of relative & Z-axis*/
+    /* left: 50px; */
+    top: 50px;
+    /* bottom: 50px; */
+    right: 20px;
+    font-size: 17px;
+    padding:5px;
+}
+.sticky{
+    border: 2px solid black;
+    border-radius: 7px;
+    background-color: plum;
+    position: sticky;   /* sticky is working viewport of its ancestors & Z-axis*/
+    /* left: 50px; */
+    top: 0px;
+    /* bottom: 50px; */
+    /* right: 0px; */
+    font-size: 17px;
+    /* padding:5px; */
+    margin: 5px 5px 0 2px;
+}
+.box
+{
+    width: 500px;
+    height: 200px;
+    border: 2px solid #000;
+    border-radius: 7px;
+    background-color: lightcyan;
+    position: relative;  
+    overflow: scroll; 
+    font-size: 18px;
+    margin: 0 0 0 35%;
+}

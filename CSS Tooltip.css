@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     background: url("clouds_background.jpg") no-repeat fixed center;
+}
+:root{
+        --h2text-shadow:3px 4px 6px orangered, 0 0 25px orange, 2px 3px 5px orangered;
+
+        --h2color:azure;
+}
+h1{
+    color: transparent;
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 1px;
+    background-image: url("rainbow.jpg");
+    background-position: center;
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+h2{    
+    letter-spacing: 1px;
+    /* color: white; */
+    color: var(--h2color);
+    /* text-shadow: 3px 4px 6px blue, 0 0 25px lightblue; */
+    text-shadow: var(--h2text-shadow);
+    font-size: 30px;
+}
+
+#main{
+    margin-left: 30px;
+}
+
+#main p,span,pre,div{
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tooltip{
+    position: relative;
+    display: inline-block;
+    margin-left: 150px;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltipText{
+    box-sizing: border-box;
+    position: absolute;
+    left: 110%;
+    top: -5px;
+    z-index: 1;
+    width: 120px;
+    background: gray;
+    border-radius: 6px;
+    color: #fff;
+    padding: 5px 0px;
+    text-align: center;
+    visibility: hidden;
+}
+/* For Arrow: */
+
+.tooltip .tooltipText::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent gray transparent transparent;
+    
+}
+
+.tooltip:hover .tooltipText{
+    visibility: visible;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tooltip</title>
+    <link rel="stylesheet" href="CSS Tooltip.css">
+</head>
+<body>
+        <div id="main">
+            <h1>CSS Tooltip</h1>
+            <br>
+            <br>
+            <h2>• Basic Tooltip</h2>
+            <br>
+            <br>
+            <br>
+            <div class="tooltip">Hover Over Me
+                <span class="tooltipText">Tooltip Text</span>
+            </div>
+            
+            <br>
+            <br>
+            <br>
+
+            <h2>Tooltip Arrows:</h2>
+            <br>
+            <pre>
+                → To create an arrow that should appear from a specific side of the tooltip, add "empty" content after tooltip,
+                with the pseudo-element class ::after together with the content property.The arrow itself is created using borders. 
+                This will make the tooltip look like a speech bubble.
+
+                → Note: The border-width property specifies the size of the arrow. 
+                If you change this, also change the margin-left value to the same. This will keep the arrow centered.
+
+                → The border-color is used to transform the content into an arrow. We set the top border to black, and the rest to transparent. 
+                If all sides were black, you would end up with a black square box.
+            </pre>
+
+
+
+        </div>
+</body>
+</html>

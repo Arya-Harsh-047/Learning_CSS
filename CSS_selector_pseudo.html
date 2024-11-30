@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">              
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selector</title>
+</head>
+<style>
+    /* a:link
+    {color:crimson;} */
+    /* unvisited link */
+
+    /* a:visited
+    {color:lime;} */
+    /* visited link */
+
+     a:hover
+    {color:orangered;}
+
+    /* a:active
+    {color:coral;} */
+    /* Selected link */
+</style>
+<body>
+    <h1>What are Pseudo-classes?</h1>
+    <p>A pseudo-class is used to define a special state of an element.
+    <br>
+        For example, it can be used to:
+        <ul>
+         <li>Style an element when a user mouses over it</li>
+         <li>Style visited and unvisited links differently</li>
+         <li>Style an element when it gets focus</li>
+        </ul>
+    </p>         
+<h3>Syntax</h3>
+<pre>The syntax of pseudo-classes:
+
+selector:pseudo-class {
+  property: value;
+}
+</pre>
+
+<h2>Anchor Pseudo-Class</h2>
+<div>
+    <h3>Styling a link depending on state</h3><br>
+
+    <a href="#" target="_blank" > This is a link 1 (unvisited) </a><br><br>
+    <a href="#" target="_blank" > This is a link 2 (visited)</a><br><br>
+    <a href="#" target="_blank" > This is a link 3 (move over)</a><br><br>
+    <a href="#" target="_blank" > This is a link 4 (selected)</a><br><br>
+
+    <p><b>Note: a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.</b></p>
+
+    <p><b>Note: a:active MUST come after a:hover in the CSS definition in order to be effective.</b></p>
+
+</div>
+<br><br>
+<h2>Pseudo-classes and HTML Classes</h2>
+<pre>
+Pseudo-classes can be combined with HTML classes:
+When you hover over the link in the example, it will change color & font size
+</pre>
+<style>
+    a.highlite:hover {
+        font-size: larger;
+        color: orangered;
+        font-weight: bolder;
+    }
+</style>
+<div>
+    <p><a href="#" class="highlite" >CSS Syntax</a></p>
+    <p><a href="#">CSS Tutorial</a></p>
+</div>
+<br>
+<br>
+<h2>Hover on div</h2>
+<style>
+    div{
+        background-color: limegreen;
+        text-align: center;
+        padding: 20px;
+        color: whitesmoke;
+        font-weight: bolder;
+    }
+    div:hover{
+        background-color: yellowgreen;
+    }
+</style>
+<div style=" div:hover{
+    background-color: yellowgreen;
+}">
+    Mouse over me
+</div>
+<br>
+<!-- <h2>The :first-child Pseudo-class</h2>
+<span>The :first-child pseudo-class matches a specified element that is the first child of another element.</span><br> -->
+</body>          
+</html>

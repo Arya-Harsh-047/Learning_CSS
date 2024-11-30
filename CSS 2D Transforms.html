@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 2D Transforms</title>
+    <link rel="stylesheet" href="CSS 2D Transforms.css">
+</head>
+<body>
+    <div id="main">
+        <h1>CSS 2D Transforms</h1>
+    <br>
+    <li>
+        <span>CSS transforms allow you to move, rotate, scale, and skew elements.</span>
+    </li>
+    <br>
+    <br>
+    <br>
+    <h2>CSS 2D Transforms Methods:</h2>
+    <br>
+    <br>
+    <h3>1. The translate() Method: </h3>
+    <pre>
+    <p>
+    The translate() method moves an element from its current position <b>(according to the parameters given for the X-axis and the Y-axis).</b> 
+    
+    Example moves the div element 50 pixels to the right, and 100 pixels down from its current position.  
+    </p>
+    </pre>
+     <div id="translate">Hover over me to see effect of translate 50px on X-axis & 100px on Y-axis.</div>
+    <br>
+    
+    <h3>2. The rotate() Method:</h3>
+    <pre>
+    <p>
+     The rotate() method <b>rotates an element clockwise or counter-clockwise according to a given degree.</b> 
+
+     Example:  rotates the div element clockwise with 20 degrees.
+    </p>
+    </pre>
+    <div id="rotate">Hover over me to see effect of rotate clockwise 20 degree.</div>
+    <br>
+
+
+    <h3>3. The scale() Method:</h3>
+    <pre>
+    <p>
+    The scale() method increases or decreases the size of an element <b>(according to the parameters given for the width and height).</b>
+
+    Example: increases the div element to be 1.5 times of its original width, and 1.5 times of its original height: 
+    </p>
+    </pre>
+    <div id="scale">Hover over me to see effect of scaling by 1.5 times original width size & 1.5 times of its original height.</div>
+    <br>
+
+    <h3>4. The skew() Method: </h3>
+    <pre>
+    <p>
+    The skew() method skews(तिरछा) an element along the X and Y-axis by the given angles.
+
+    Example: skews the div element 20 degrees along the X-axis, and 10 degrees along the Y-axis:
+    </p>
+    </pre>
+    <div id="skew">
+        Hover over me to see effect of skew 20 degrees along the X-axis, and 10 degrees along the Y-axis.
+    </div>
+    <br>
+
+
+    <h3>5. The matrix() Method: </h3>
+    <pre>
+    <p>
+    The matrix() method combines all the 2D transform methods into one.
+
+    The parameters are as follow: matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY())
+
+    Example:   transform: matrix(1, -0.3, 0, 1, 0, 0);
+    </p>
+    </pre>
+    <div id="matrix">
+        Hover over me to see effect of matrix transformation.
+    </div>
+
+
+    <br>
+
+    <h3>6. Transform Origin: </h3>
+    <pre>
+      <p>
+        The origin from which a transformation takes place is known as the "transform-origin". It can be set using CSS property 'transform-origin'.
+      </p>  
+    </pre>
+    <div id="trans_origion">
+        Hover over me to see effect of origin (center).
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h3>Example of Transform with transition property: </h3>
+    <div id="example">
+        Example of Transform property with transition property
+    </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div></div>
+    </div>
+    
+</body>
+</html>

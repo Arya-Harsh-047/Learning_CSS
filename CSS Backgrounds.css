@@ -1,0 +1,41 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    /* background-color:aliceblue;
+    background-image: url("background.jpg");
+    color: azure;
+    opacity: 0.9; */
+    /* background-image: url("design.jpg"); */
+    /* background-repeat: repeat-y;
+    background-repeat: repeat-x; */
+    /* background-repeat: no-repeat;
+    background-position: right top; */
+    /* background-position: left bottom; */
+    /* background-attachment: fixed; */
+    background: url("design.jpg") no-repeat fixed right top;            /*Background Shorthand*/
+    margin-right: 360px;
+}
+
+.opacity{
+    background-color: chartreuse;
+    opacity: 1;
+}
+
+#opacity{
+    background-color: chartreuse;
+    opacity: 0.3;
+}
+
+#rgbo{
+    background: rgba(32, 112, 233, 0.3) /* background with 30% opacity */
+  }
+
+  .image{
+    background-image: url("background.jpg");
+    color: azure;
+    opacity: 0.9;
+  }
+  
+  .back{
+    color: darkorange;
+    font-style: oblique;
+  }

@@ -1,0 +1,86 @@
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+
+    background: url("purple_lights.jpg") no-repeat fixed center;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style-type: none;
+    overflow: hidden;
+    margin:0;
+    padding:0;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+li{
+    float: left;
+}
+
+li a{
+    display: inline-block;
+    font-size: 20px;
+    color: whitesmoke;
+    text-decoration: none;
+    padding:10px 38px;
+    text-align: center;
+}
+
+li a:hover{
+    background:orangered;
+}
+
+.active{
+    background-color:#db22d2;
+}
+
+header{
+    text-align:center;
+    font-size: 30px;
+    background: url("rainbow.jpg");
+    background-position: center;
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.h1{
+    color: white;
+    text-shadow: 4px 4px 6px darkmagenta,  -2px -3px 6px purple, 0 0 25px darkviolet
+}
+.para{
+    font-size: 18px;
+    white-space: pre-wrap;
+    word-spacing: 1px;
+}
+span.a {
+    display: inline; /* the default for span */
+    width: 70px;
+    height: 30px;
+    padding: 5px;
+    border: 1px solid blue;  
+    background-color: yellow; 
+  }
+  
+  span.b {
+    display: block;
+    width: 70px;
+    height: 30px;
+    padding: 5px;
+    border: 1px solid blue;    
+    background-color: yellow; 
+  }
+  div{
+    font-size: 18px;
+    
+  }
+  
+  span.c {  
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+    padding: 5px;
+    border: 1px solid blue;    
+    background-color: yellow; 
+  }

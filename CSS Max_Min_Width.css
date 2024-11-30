@@ -1,0 +1,32 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: url("green_nebula.jpg");
+}
+.col{
+    font-size: 17px;   
+}
+
+.first{
+    border: 3px solid orangered;
+    border-radius: 7px;
+    /* width: 600px; */
+    height: 120px;
+    max-width: 500px;
+    /* esme content ki width ko ek max boundation mil jayega jiske baad content ki width apne aap hi 500px ki width me rahegi
+    */
+}
+.second{
+    border: 3px solid orchid;
+    border-radius: 7px;
+    /* width: 300px;  */
+    /*here after width is 300px img is over flow from border*/
+    min-height: 400px; 
+    /*ye apne aap poori width le legi jo image ki hogi*/
+
+    max-width: 1000px;
+    /* esse div responsive ban jayeg image ke saath but pehle hume image ko div ki 100% pr set krna hoga*/
+}
+img{
+    width: 100%;
+    height: fit-content;
+}

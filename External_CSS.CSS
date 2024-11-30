@@ -1,0 +1,42 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form {
+    border: 3px solid springgreen;
+    border-radius: 10px;
+    background-color: bisque;
+   display: block;
+}
+
+#fname {
+    width: 150px;
+    display: block;
+    background-color: aliceblue;
+    border: 1px solid gold;
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+
+#lname {
+    width: 150px;
+    display: block;
+    background-color: aliceblue;
+    border: 1px solid gold;
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+
+#btn {
+    margin-left: 5%;
+    background-color: darkorchid;
+    border-radius: 10px;
+    border: 1px solid darkmagenta;
+    padding: 3px;
+}
+
+#btn:hover {
+    background-color: orchid;
+    cursor: pointer;
+    color: aliceblue;
+}

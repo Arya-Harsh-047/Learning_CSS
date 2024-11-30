@@ -1,0 +1,57 @@
+body{
+    font-family:'Times New Roman', Times, serif;
+    background: url("clouds_background.jpg") no-repeat fixed center;
+} 
+.pre1
+{       
+       font-size: 18px;
+}
+.pre2{
+    font-size: 17px;
+}
+.para{
+    color: orangered;
+    font-size: 17px;
+    margin-left: 10px;
+    outline-color: fuchsia;
+    /* outline-style: dashed; */
+    outline-style:outset;
+}
+.pre3{
+    font-size: 17px;
+}
+.para2{
+    color: dodgerblue;
+    font-size: 17px;
+    margin-left: 10px;
+    outline-style: solid;
+    outline-color: tomato;
+    /* outline-width: 1px; */
+    outline-width: 3px;
+}
+
+.div1{
+    font-size: 17px;
+}
+
+.para3{
+    font-size: 17px;
+    color: magenta;
+    margin-left: 10px;
+    outline: 2px solid darkblue;
+}
+
+.pre4{
+    font-size: 17px;
+}
+
+.para4{
+    font-size: 17px;
+    color: darkgreen;
+    background-color: lightpink;
+    margin-left: 0.5%;
+    border: 2px solid orangered;
+    outline: 2px solid rebeccapurple;
+    outline-offset: 15px;
+}
+

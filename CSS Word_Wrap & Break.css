@@ -1,0 +1,26 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: url("clouds_background.jpg") no-repeat fixed center;
+}
+
+.header{
+    text-align: center;
+    font-size: 50px;
+    color: transparent;
+    background-image: url("rainbow.jpg");
+    background-size: cover;
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.box1{
+    width: 400px;
+    border: 2px solid black;
+    word-wrap: break-word; /*only use to break long word in a para */
+}
+.box2{
+    width: 400px;
+    border: 2px solid black;
+    word-break: break-all; /*used to break every last word in a para to next line*/
+}

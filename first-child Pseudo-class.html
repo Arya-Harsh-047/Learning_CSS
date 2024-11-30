@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first-child Pseudo-class</title>
+</head>
+<style>
+    /* p:first-child {
+        color: red;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    } */
+    p i:first-child{                       /* Match the first "i" element in all "p" elements*/
+        color:orangered;
+        font-weight: bold;
+    }
+    
+</style>
+<body>
+    <h1>CSS - The :first-child Pseudo-class</h1>
+    <pre>The :first-child pseudo-class matches a specified element that is the first child of another element.</pre>
+
+    <h2>Match the first "p" element</h2>
+    In the following example, the selector matches any "p" element that is the first child of any element:
+
+    <span>
+        <p>A 1st para</p>
+        <p>A 2nd para outside the div</p>
+        </span>
+
+    <div>
+        <p>A 1st para inside div</p>
+        <p>A 2nd para inside div</p>
+    </div>
+    <br>
+        
+   <h2>
+    Match the first "i" element in all "p" elements</h2>
+    
+    <p>I am a <i>hard working</i> person And a devotee of <i>Lord Ram</i> </p>
+    <p>I am a <i>hard working</i> person And a devotee of <i>Lord Ram</i> </p>
+<br>
+
+
+<style>
+
+p:first-child i{                        /* Match all "i" element in all first child "p" elements*/
+    color:orange;   
+    font-weight: bold;
+}
+
+</style>
+
+
+    <h2>Match all "i" element in all first child "p" elements</h2>
+    <br>
+<pre>
+    <p>I am a <i>honest</i> person And a devotee of <i>Lord Ram</i></p>
+    <p>I am a <i>honest</i> person And a devotee of <i>Lord Ram</i></p>
+</pre>
+</body>
+</html>

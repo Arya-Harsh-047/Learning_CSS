@@ -1,0 +1,65 @@
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background: url("design.jpg") no-repeat fixed center;
+
+}
+.header{
+    text-align:center ;
+    /* color: aliceblue; */
+    /* text-shadow: 1px 1px 3px darkblue, 0 0 25px lightblue, 0 0 6px lightseagreen; */
+    font-size: 75px;
+    font-weight: 900;
+    background-image: url("color2.jpg");
+    background-size: cover;
+    background-position:center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    
+}
+.pre1{
+    font-size: 18px;
+}
+#div1{          /* this showing working area of a Block Element*/
+    border: 2px solid magenta;  
+    border-radius: 7px;
+    padding: 4px 4px 4px 10px;
+}
+.ul1{
+    font-size: 18px;
+    list-style: square;
+}
+.span1{             /* this showing working area of a Inline Element*/
+    border: 2px solid orangered;
+    border-radius: 7px;
+    padding: 4px 10px 4px 10px;
+}
+.ol1{
+    font-size: 18px;    
+    list-style: upper-roman;
+}
+
+#ul1{
+    font-size: 18px;
+    list-style: none;
+
+}
+.list{
+    display: block;          /*By default because list is a Block element*/
+    text-decoration: underline;
+
+    /* display: inline; */
+
+}
+#list1:hover{
+    
+    display: none;
+}
+#list2:hover{
+    
+    display: none;
+}
+#list3:hover{
+    
+    display: none;
+}

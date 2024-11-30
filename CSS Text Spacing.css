@@ -1,0 +1,48 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background:url("gilter_background.jpg") no-repeat fixed center;
+}
+
+.pre1{
+    font-size: 18px;
+}
+.pre2{
+    font-size: 18px;
+    text-indent:30px;   /* es property se para ki 1st line ki starting 30px jagha chod kr hogi*/
+}
+.pre3{
+    font-size: 18px;
+}
+.para1{
+    text-indent: 50px;
+    letter-spacing: 2px;
+    letter-spacing: -2px;   /*used for space between letters*/
+}
+.pre4{
+    font-size:17px
+}
+
+.para2{
+    width: 500px;
+    text-indent: 50px;
+    text-transform: capitalize;
+    letter-spacing: -1px;
+    line-height: 40px;
+}
+
+.pre5{
+    font-size: 17px;
+    text-indent: 50px;
+    text-transform: capitalize;
+    word-spacing: 8px; /* use to increase & decrease the space between the each word*/
+}
+.pre6{
+    font-size: 17px;
+    text-indent: 50px;
+    text-transform: capitalize;
+    word-spacing: 8px;
+    line-height: 25px;
+    white-space:nowrap;
+    white-space:pre-wrap;
+    white-space:pre-line;
+}

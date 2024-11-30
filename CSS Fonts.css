@@ -1,0 +1,15 @@
+body{
+    /* font-family: 'Roboto Mono', monospace; */
+    font-family: "Sofia", sans-serif;
+    background: url("light-blue-background.jpg") no-repeat fixed center;
+
+}
+.pre1{
+    font-size: 18px;
+    font-weight: 100;
+    font-style: italic;
+    /* text-indent: 50px; */
+}
+#pre2{
+    font-size: 18px;
+}

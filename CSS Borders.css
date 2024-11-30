@@ -1,0 +1,28 @@
+body{
+    background:url("bkgr.avif") no-repeat fixed center top;
+    /* background:url("bkgr.avif") repeat-y fixed center top; */
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.bor{
+    border-style:solid;
+    border-width: 3px;
+    margin-right: 70%;
+}
+.borred{
+    /* border-bottom: red;
+    border-bottom-style:solid;
+    border-width: 3px; */
+    border-bottom: 3px solid red;
+    margin-right: 70%;  
+}
+.groove{
+    border-style: groove;
+    border-color: darkorange;
+    margin-right: 70%;
+}
+.sort{
+    border: 4px solid orchid;
+    border-radius: 10px;
+    margin-right: 70%;
+}
