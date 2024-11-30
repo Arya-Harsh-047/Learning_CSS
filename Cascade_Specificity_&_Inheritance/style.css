@@ -43,3 +43,6 @@ font-family: inherit;
 /* inherit from parent body */
 /* because it inherit defalt font family Airel from browser */
 }
+div{
+    color: chartreuse !important;
+}
