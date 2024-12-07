@@ -49,6 +49,6 @@ body{
 width: 100%; 
 /* by doing this image take 100% width of its parent i.e .three*/
 height: 100%;
-/* object-fit: cover;
-mix-blend-mode: multiply; */
+object-fit: cover;
+mix-blend-mode: multiply;
 }
