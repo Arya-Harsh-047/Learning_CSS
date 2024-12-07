@@ -1,0 +1,18 @@
+.parent{
+    /* border: 2px solid orangered; */
+    width: 800px;/*parent of .one*/
+}
+.one{
+    background-color: lightpink;
+    /* width: 500px;  cause of overflow */
+    max-width: 500px; /*no overflow*/
+    /* height: 300px; cause of overflow*/
+    min-height: 300px;
+    padding: 10px;
+}
+.two{
+    background-color: lightsalmon;
+    max-width: 50%; /*when we give width in % it take 50% width of its parent*/
+    min-height: 30%;
+    word-break: break-all;/*The word-break CSS property sets whether line breaks appear wherever the text would otherwise overflow its content box.*/
+}
