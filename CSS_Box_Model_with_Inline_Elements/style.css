@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+    /* margin: 0; */
+}
+
+body{
+    margin: 0px;
+}
+
+/* .parent{
+    background-color: crimson;
+} */
+.one{
+    background-color: aquamarine;
+    color: orangered;
+    width: 300px;
+    padding: 25px;
+    /* border: 10px solid; */
+    /* Color of border = color of font */
+    border: 10px solid teal;
+    
+    /* box-sizing: border-box; Thats why we use this in Universal selector(*) so that it can automaticaly adjust padding margin & border to element height & width */
+    margin: 40px;
+
+}
+.two{
+    background-color: lightsalmon;
+    color: darkorchid;
+    width: 300px;
+    padding: 25px;
+    border: 10px solid;
+    border-radius: 25px;
+    margin: 40px;
+}
+.three{
+    background-color: lightpink;
+    color: darkmagenta;
+    width: 300px;
+    height: 300px;
+    padding: 25px;
+    border: 10px solid lime;
+    border-radius: 50%;
+    margin: 40px;
+    overflow: hidden;
+    /* to hide overflowing image */
+
+
+    /* Gradient Color Background */
+    background: linear-gradient(to bottom right, lightblue, orchid); 
+
+}
+
+.three img{
+width: 100%; 
+/* by doing this image take 100% width of its parent i.e .three*/
+height: 100%;
+object-fit: cover;
+mix-blend-mode: multiply;
+/* The mix-blend-mode property specifies how an element's content should blend with its direct parent background. */
+}

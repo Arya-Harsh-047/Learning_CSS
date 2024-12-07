@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Box Model</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>CSS Box Model</h1>
+    <p>My Name is Harsh</p>
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>JAVASCRIPT</span>
+
+    <div class="parent">
+      <div class="one">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam dolores
+        quisquam porro velit, quia, voluptate officia id provident similique
+        magni eius ipsam harum doloremque expedita nihil. Ipsa obcaecati ullam
+        beatae accusamus odit similique dolor.
+      </div>
+      <div class="two">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam dolores
+        quisquam porro velit, quia, voluptate officia id provident similique
+        magni eius ipsam harum doloremque expedita nihil. Ipsa obcaecati ullam
+        beatae accusamus odit similique dolor.
+      </div>
+      <div class="three">
+         <img src="./bkgr.avif" alt="randome pic" srcset="">
+      </div>
+    </div>
+
+
+    <!-- Note : When w e add border, Paddding & margin to dive (classname="one") then it expend the orignal size of div (width:300px to 369px)  so when we get screen size lower than 369px via devtool then we see a scrollbar. So to avoid it we can use property box-sizing: border-box. 
+     
+    The CSS box-sizing property allows us to include the padding and border in an element's total width and height. i.e now after adding 10px as border & 25px as padding the current size is sme as starting (width 300px)-->
+  </body>
+</html>
