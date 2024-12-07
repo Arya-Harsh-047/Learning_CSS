@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 .parent{
     /* border: 2px solid orangered; */
     background-color: crimson;
@@ -10,7 +14,7 @@
     /* border: 10px solid; */
     /* Color of border = color of font */
     border: 10px solid teal;
-    box-sizing: border-box;
+    /* box-sizing: border-box; Thats why we use this in Universal selector(*) so that it can automaticaly adjust padding margin & border to element height & width */
 }
 .two{
     background-color: lightsalmon;
