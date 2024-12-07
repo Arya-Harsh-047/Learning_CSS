@@ -1,11 +1,15 @@
 *{
     box-sizing: border-box;
+    /* margin: 0; */
 }
 
-.parent{
-    /* border: 2px solid orangered; */
-    background-color: crimson;
+body{
+    margin: 0px;
 }
+
+/* .parent{
+    background-color: crimson;
+} */
 .one{
     background-color: aquamarine;
     color: orangered;
@@ -15,10 +19,13 @@
     /* Color of border = color of font */
     border: 10px solid teal;
     /* box-sizing: border-box; Thats why we use this in Universal selector(*) so that it can automaticaly adjust padding margin & border to element height & width */
+    margin: 40px;
 }
 .two{
     background-color: lightsalmon;
-    max-width: 50%; /*when we give width in % it take 50% width of its parent*/
-    min-height: 30%;
-    word-break: break-all;/*The word-break CSS property sets whether line breaks appear wherever the text would otherwise overflow its content box.*/
+    color: darkorchid;
+    width: 300px;
+    padding: 25px;
+    border: 10px solid;
+    margin: 40px;
 }
