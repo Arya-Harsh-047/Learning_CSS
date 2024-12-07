@@ -1,13 +1,16 @@
 .parent{
     /* border: 2px solid orangered; */
-    background-color: aquamarine;
+    background-color: crimson;
 }
 .one{
-    background-color: lightpink;
+    background-color: aquamarine;
+    color: orangered;
     width: 300px;
     padding: 25px;
-    border: 10px solid;
+    /* border: 10px solid; */
     /* Color of border = color of font */
+    border: 10px solid teal;
+    box-sizing: border-box;
 }
 .two{
     background-color: lightsalmon;
