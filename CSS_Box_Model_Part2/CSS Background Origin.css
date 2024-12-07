@@ -46,7 +46,7 @@ h2{
     /* background-origin: content-box;  */
     /* content-box: start where is content is start in a box */
 
-    background-origin: order-box; 
+    background-origin: border-box; 
     /* border-box: start where is border is start in a box */
 
     box-shadow:4px 4px 6px 0 pink inset, 5px 5px 10px 0 plum ;
