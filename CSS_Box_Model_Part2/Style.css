@@ -42,7 +42,12 @@ body{
     border-radius: 50%;
     margin: 40px;
     overflow: hidden;
-    /* to hide oerflowing image */
+    /* to hide overflowing image */
+
+
+    /* Gradient Color Background */
+    background: linear-gradient(to bottom right, lightblue, orchid); 
+
 }
 
 .three img{

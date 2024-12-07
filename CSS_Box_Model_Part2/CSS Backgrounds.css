@@ -11,8 +11,8 @@ body{
     background-position: right top; */
     /* background-position: left bottom; */
     /* background-attachment: fixed; */
-    background: url("design.jpg") no-repeat fixed right top;            /*Background Shorthand*/
-    margin-right: 360px;
+    /* margin-right: 360px; */
+    overflow: hidden;
 }
 
 .opacity{
