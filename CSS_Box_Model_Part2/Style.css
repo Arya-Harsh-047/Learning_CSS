@@ -6,6 +6,8 @@
     background-color: lightpink;
     width: 300px;
     padding: 25px;
+    border: 10px solid;
+    /* Color of border = color of font */
 }
 .two{
     background-color: lightsalmon;
