@@ -18,8 +18,10 @@ body{
     /* border: 10px solid; */
     /* Color of border = color of font */
     border: 10px solid teal;
+    
     /* box-sizing: border-box; Thats why we use this in Universal selector(*) so that it can automaticaly adjust padding margin & border to element height & width */
     margin: 40px;
+
 }
 .two{
     background-color: lightsalmon;
@@ -27,5 +29,26 @@ body{
     width: 300px;
     padding: 25px;
     border: 10px solid;
+    border-radius: 25px;
     margin: 40px;
+}
+.three{
+    background-color: lightpink;
+    color: darkmagenta;
+    width: 300px;
+    height: 300px;
+    padding: 25px;
+    border: 10px solid;
+    border-radius: 50%;
+    margin: 40px;
+    overflow: hidden;
+    /* to hide oerflowing image */
+}
+
+.three img{
+width: 100%; 
+/* by doing this image take 100% width of its parent i.e .three*/
+height: 100%;
+/* object-fit: cover;
+mix-blend-mode: multiply; */
 }
